@@ -1,0 +1,66 @@
+.comment {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.ownerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
+.ownerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ownerName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.time {
+  font-size: 11px;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+}
+
+.content {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.7;
+  padding-left: 46px;
+}
+
+.content p { margin-bottom: 8px; }
+.content p:last-child { margin-bottom: 0; }
+
+.actions {
+  display: flex;
+  gap: 8px;
+  padding-left: 46px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

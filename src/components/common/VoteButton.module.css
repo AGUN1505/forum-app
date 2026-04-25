@@ -1,0 +1,48 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-3);
+  color: var(--text-3);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover:not(.disabled) {
+  border-color: var(--border-2);
+  color: var(--text-2);
+  background: var(--bg-4);
+}
+
+.icon {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.count {
+  min-width: 16px;
+  text-align: center;
+}
+
+.votedUp {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: rgba(108, 99, 255, 0.1) !important;
+}
+
+.votedDown {
+  border-color: var(--accent-2) !important;
+  color: var(--accent-2) !important;
+  background: rgba(255, 107, 107, 0.1) !important;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
