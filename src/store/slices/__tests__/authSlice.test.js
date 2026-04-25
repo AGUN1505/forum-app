@@ -44,6 +44,7 @@ describe('authSlice reducer', () => {
       const loggedInState = { user: mockUser, status: 'succeeded', error: null };
       const state = authReducer(loggedInState, logout());
       expect(state.user).toBeNull();
+      // expect(state.user).toBe('ini akan gagal');
       expect(state.status).toBe('idle');
     });
 
